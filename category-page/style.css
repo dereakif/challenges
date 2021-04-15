@@ -123,17 +123,15 @@ body {
   border-radius: 1rem;
 }
 .card-footer {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #9b9b9b;
 }
-.card-footer-cl-right {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-content: flex-end;
-  text-align: end;
+.card-footer-cl {
+  display: flex;
 }
-.card-footer-cl-left {
-}
+
 .footer-item {
+  padding: 1rem;
 }
