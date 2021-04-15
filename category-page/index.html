@@ -3,43 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"  content="minimum-scale=1, initial-scale=1, width=device-width"/>
     <title>Category</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
     <div class="container">
        <div class="taskbar">taskbar</div>
-        <div class="task">tasks coloumn</div>
+        <div class="tasks">
+            <div class="tasks-title">Tasks</div>
+            <div class="tasks-container">
+                <div class="task-item"><i class="fas fa-play"></i>Downloading</div>
+                <div class="task-item"><i class="fas fa-pause"></i>Waiting</div>
+                <div class="task-item"><i class="fas fa-stop"></i>Stopped</div>
+            </div>
+        </div>
         <div class="content-container">
             <div class="content-header">
-                 <div class="header-title">Downloading</div>
-                    <div class="header-btn-container">
-                        <button class="header-btn">X</button>
-                        <button class="header-btn">X</button>
-                        <button class="header-btn">X</button>
-                        <button class="header-btn">X</button>
-                    </div>
+                <div class="header-title">Downloading</div>
+                <div class="header-btn-container">
+                    <button class="header-btn"><i class="fa fa-times"></i></button>
+                    <button class="header-btn"><i class="fa fa-redo"></i></button>       
+                    <button class="header-btn"><i class="fas fa-play"></i></button>
+                    <button class="header-btn"><i class="fas fa-pause"></i></button>
+                </div>
             </div>
             <div class="card-container">
                 <div class="card">
-                <div class="card-header">
-                    <div class="card-title">card title</div>
-                    <div class="card-btn-container">
-                        <div class="card-btn">x</div>
-                        <div class="card-btn">x</div>
-                        <div class="card-btn">x</div>
-                        <div class="card-btn">x</div>
+                    <div class="card-header">
+                        <div class="card-title">ubuntu-20.04-desktop-amd64.iso</div>
+                        <div class="card-btn-container">
+                            <div class="card-btn"><i class="fas fa-pause"></i></div>
+                            <div class="card-btn"><i class="fa fa-times"></i></div>
+                            <div class="card-btn"><i class="far fa-folder"></i></div>
+                            <div class="card-btn"><i class="fas fa-link"></i></div>
+                        </div>
                     </div>
-            </div>
-                <div class="download-bar">download bar</div>
-                <div class="card-footer">
-                    <div class="card-footer-cl">remaining mb</div>
-                    <div class="card-footer-cl">
-                        <div>speed</div>
-                        <div>remaining time</div>
+                    <div class="download-bar">
+                        <div class="downloaded"></div>
                     </div>
-                </div>
+                    <div class="card-footer">
+                        <div class="card-footer-cl-left">545.5 MB / 2.5 GB</div>
+                        <div class="card-footer-cl-right">
+                            <div class="footer-item">↓ 8.7 MB/s</div>
+                            <div class="footer-item">Remaining 3m 56s</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
