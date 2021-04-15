@@ -10,6 +10,18 @@ body {
 .taskbar {
   background-color: #282828;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2vh;
+}
+.taskbar-item {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.taskbar-item:hover {
+  color: #8585fa;
+  cursor: pointer;
 }
 .tasks {
   background-color: #f4f5f7;
